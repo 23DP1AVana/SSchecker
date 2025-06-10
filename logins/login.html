@@ -15,15 +15,15 @@
       <div class="forms-container">
         <div class="signin-signup">
           <!-- SIGN IN FORM -->
-          <form class="sign-in-form">
+          <form class="sign-in-form" id="login-form">
             <h2 class="title">Sign in</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" id="login-username" required />
+              <input type="text" placeholder="Email" id="email-login" required />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" id="login-password" required />
+              <input type="password" placeholder="Password" id="password-login" required />
             </div>
             <input type="submit" value="Login" class="btn solid" />
             <p class="social-text">Or Sign in with social platforms</p>
@@ -36,17 +36,17 @@
           </form>
 
           <!-- SIGN UP FORM -->
-          <form class="sign-up-form">
+          <form class="sign-up-form" id="register-form">
             <h2 class="title">Sign up</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" required />
+              <input type="text" placeholder="Email" required id="email-register" name="email"/>
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" required />
+              <input type="password" placeholder="Password" required id="password-register" name="password"/>
             </div>
-            <input type="submit" class="btn" value="Sign up" />
+            <input type="submit" class="btn" value="Sign up" id="register-submit"/>
             <p class="social-text">Or Sign up with social platforms</p>
             <div class="social-media">
               <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
@@ -78,6 +78,6 @@
       </div>
     </div>
 
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
   </body>
 </html>
